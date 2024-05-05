@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandcamp RSS Feeds</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Genre RSS Feed</h1>
+    <p>Used to follow one or more genres. Warning: All genres have to match. If you want to watch multiple different
+        genres, add multiple feeds</p>
+    <form id="genre_feed">
+        <label for="genre">Genre</label>
+        <input id="genre" type="text">
+        <p>Category</p>
+        <input id="all_categories" type="radio" name="category" value="0" checked>
+        <label for="all_categories">all categories</label><br>
+        <input id="digital" type="radio" name="category" value="1">
+        <label for="digital">digital</label><br>
+        <input id="vinyl" type="radio" name="category" value="2">
+        <label for="vinyl">vinyl</label><br>
+        <input id="cd" type="radio" name="category" value="3">
+        <label for="cd">compact discs</label><br>
+        <input id="cassettes" type="radio" name="category" value="4">
+        <label for="cassettes">cassettes</label><br>
+        <input id="t_shirts" type="radio" name="category" value="5">
+        <label for="t_shirts">t-shirts</label>
+        <br>
+        <label for="location">Location</label>
+        <input id="location" type="number">
+
+        <p>Result <pre id="result"></pre></p>
+    </form>
+</body>
+</html>
